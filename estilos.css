@@ -1,0 +1,209 @@
+/*BARRA NAVEGACION*/
+.navbar {
+    padding: 1.5rem;
+    background-color: rgb(112, 112, 179);
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*ESTILOS GENERALES*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.seccion-oscura {
+    color: white;
+    background-color: rgb(24, 22, 36);
+}
+
+.seccion-clara {
+    color: black;
+    background-color: rgb(241, 241, 241);
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Nunito', sans-serif;
+}
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color: rgb(129, 129, 130);
+}
+.seccion-texto {
+    font-size: 1.2rem;
+}
+
+.texto-negro{
+    color: black;
+}
+.texto-blanco{
+    color: white;
+}
+
+i {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+/*HERO*/
+.hero {
+    background-color: rgb(205, 222, 237);
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-principal {
+    padding: 3rem;
+
+}
+
+.hero-principal i {
+    font-size: 8rem;
+    margin: 20px;
+}
+
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color: rgb(49, 49, 49);
+}
+
+/**SOBRE MI */
+.sobre-mi {
+    padding: 0.8rem;
+    height: 28rem;
+}
+
+.sobre-mi .contenedor {
+    max-width: 700px;
+    text-align: center;
+}
+
+/*EXPERIENCIA */
+.experiencia {
+    padding: 40px;
+}
+
+.experiencia .columna {
+    padding: 20px;
+    border: 2px solid rgb(90, 90, 90);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+    color: white;
+    background-color: rgb(24, 22, 36);
+}
+
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.experiencia i {
+    font-size: 2.5rem;
+    color: rgb(24, 199, 11);
+    background-color: rgb(23, 23, 39);
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+.badges-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge {
+    margin: 5px;
+}
+
+/*PROYECTOS*/
+.proyectos-recientes{
+    padding: 40px;
+}
+.proyectos-recientes img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2 ease;
+}
+
+.proyectos-contenedor{
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+.proyecto{
+    position: relative;
+}
+
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.proyecto:hover img{
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay{
+    opacity: 1;
+}
+
+
+/*MEDIA QUERYS*/
+/*NAV*/
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+/*HERO*/
+@media screen and (min-width: 570px) {
+    .hero-inferior-imagen {
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-principal i {
+        font-size: 5rem;
+    }
+
+    .hero-principal h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-principal h2 {
+        font-size: 1.15rem;
+    }
+}

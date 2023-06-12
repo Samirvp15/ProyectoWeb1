@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi sitio responsivo</title>
+    <!--FAVICON-->
+    <link rel="icon" type="image" href="imagenes\bootstrap-fill.svg">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <!--Fuentes Texto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+<body>
+    <!--BARRA NAVEGACION-->
+    <nav class="navbar navbar-expand-md ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">
+                    <img src="imagenes\bootstrap-fill.svg" alt="Logo Pagina" width="50px">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero align-items-stretch">
+        <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+            <i class="bi bi-person-circle"></i>
+            <h1>Hola Soy Samir</h1>
+            <h2>Desarrollando mi primer sitio web responsivo</h2>
+        </div>
+        <div class="hero-inferior">
+            <img class="hero-inferior-imagen img-fluid" src="imagenes/imagen1.png" alt="imagen1">
+        </div>
+    </section>
+
+    <!--Sobre Mi-->
+    <section class="sobre-mi seccion-oscura">
+        <div class="contenedor">
+            <h2 class="seccion-titulo texto-blanco">Conoce a Samir</h2>
+            <p class="seccion-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates debitis omnis
+                voluptatibus eos
+                ratione et voluptas maxime enim, dolor, nostrum officiis consequuntur minima, distinctio esse voluptatem
+                ab ipsam optio sequi.</p>
+        </div>
+    </section>
+
+    <!--EXPERIENCIA-->
+    <section class="experiencia seccion-clara">
+        <div class="container text-center">
+            <div class="row">
+                <!--DESARROLLO WEB-->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-laptop"></i>
+                    <p class="experiencia-titulo">DESARROLLO WEB</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis maiores, accusantium corrupti
+                        temporibus deleniti distinctio voluptates! Nesciunt molestias unde sit aperiam vero, ipsa
+                        facere, eveniet, nobis sapiente necessitatibus voluptatibus quos?</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">HTML</span>
+                        <span class="badge text-bg-primary">CSS</span>
+                        <span class="badge text-bg-primary">JS</span>
+                        <span class="badge text-bg-primary">BS</span>
+                    </div>
+                </div>
+                <!--ARTICULOS -->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-laptop"></i>
+                    <p class="experiencia-titulo">ARTICULOS</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis maiores, accusantium corrupti
+                        temporibus deleniti distinctio voluptates! Nesciunt molestias unde sit aperiam vero, ipsa
+                        facere, eveniet, nobis sapiente necessitatibus voluptatibus quos?</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">ESCRIBIR</span>
+                        <span class="badge text-bg-primary">EDITAR</span>
+                        <span class="badge text-bg-primary">BLOGS</span>
+                    </div>
+                </div>
+                <!-- ESTUDIANTE-->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-laptop"></i>
+                    <p class="experiencia-titulo">ESTUDIANTE</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis maiores, accusantium
+                        corrupti
+                        temporibus deleniti distinctio voluptates! Nesciunt molestias unde sit aperiam vero, ipsa
+                        facere, eveniet, nobis sapiente necessitatibus voluptatibus quos?</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">JAVA</span>
+                        <span class="badge text-bg-primary">HTML</span>
+                        <span class="badge text-bg-primary">ALGORITMOS</span>
+                        <span class="badge text-bg-primary">BS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--PROYECTOS-->
+    <section class="proyectos-recientes seccion-clara d-flex flex-column">
+        <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+        <h3 class="seccion-descripcion">Algunos proyectos creados recientemente..</h3>
+        <!--GALERIA-->
+        <div class="container text-center proyectos-contenedor">
+            <div class="row">
+                <!--PROYECTO 1-->
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="imagenes/proyecto1.jpg" alt="proyecto1">
+                        <div class="overlay">
+                            <p>Proyecto 1</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://icons.getbootstrap.com">
+                                    <i class="bi bi-bootstrap-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--PROYECTO 2-->
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="imagenes/proyecto1.jpg" alt="proyecto1">
+                        <div class="overlay">
+                            <p>Proyecto 2</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://icons.getbootstrap.com">
+                                    <i class="bi bi-bootstrap-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--PROYECTO 3-->
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="imagenes/proyecto1.jpg" alt="proyecto1">
+                        <div class="overlay">
+                            <p>Proyecto 3</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://icons.getbootstrap.com">
+                                    <i class="bi bi-bootstrap-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!--PROYECTO 4-->
+                 <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="imagenes/proyecto1.jpg" alt="proyecto1">
+                        <div class="overlay">
+                            <p>Proyecto 4</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://icons.getbootstrap.com">
+                                    <i class="bi bi-bootstrap-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--PROYECTO 5-->
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="imagenes/proyecto1.jpg" alt="proyecto1">
+                        <div class="overlay">
+                            <p>Proyecto 1</p>
+                            <div class="iconos-contenedor">
+                                <a href="">
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--PROYECTO 6-->
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="imagenes/proyecto1.jpg" alt="proyecto1">
+                        <div class="overlay">
+                            <p>Proyecto 1</p>
+                            <div class="iconos-contenedor">
+                                <a href="">
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
